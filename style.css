@@ -14,28 +14,28 @@
 
 body {
   margin: 0;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background-image: url("image/backgroundBlue.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: "NeoDunggeunmo", Arial, sans-serif;
+  overflow: hidden;
 }
 
 .container {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 30px;
+  padding: clamp(20px, 3vw, 30px);
   border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
+  width: min(90vw, 400px);
+  max-height: calc(100dvh - 40px);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
   border: 2px solid #0ff;
-  margin: auto;
 }
 
 .profile {
