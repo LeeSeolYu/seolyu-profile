@@ -73,6 +73,7 @@ body {
 }
 
 .social-icons a {
+  position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -90,6 +91,25 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.social-icons a.dev-blog,
+.social-icons a.life-blog {
+  border-radius: 50%;
+}
+
+.social-icons a.dev-blog {
+  border: 2px solid #ffd700;
+  box-shadow:
+    0 0 6px #ffd700,
+    0 0 14px rgba(255, 215, 0, 0.9);
+}
+
+.social-icons a.life-blog {
+  border: 2px solid #ffd1dc;
+  box-shadow:
+    0 0 5px #ffd1dc,
+    0 0 12px rgba(255, 209, 220, 0.75);
 }
 
 #qr-modal {
